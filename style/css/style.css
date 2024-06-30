@@ -1,0 +1,60 @@
+body {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.border-down {
+    border-bottom: solid black;
+}
+
+.btn-custom{
+    background: #7E8CB1;
+    color: white;
+    border: solid 2px black;
+}
+
+.btn-card{
+    background-color: #ECE1C4;
+    color: white;
+}
+
+.font-card{
+    text-shadow: 0 0 10px black, 0 0 10px black;
+}
+
+.btn-card:hover{
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+.gap-grid{
+    gap: 30px;
+}
+
+.font-color{
+    text-shadow: 0 0 10px black, 0 0 10px black;
+}
+
+.btn-custom:hover{
+    background-color: black;
+    color: white;
+}
+
+.img-banner{
+    background-image: url('../../img/Untitled_design__2_-removebg-preview.png')
+}
+
+.boarder-search{
+    border-bottom: solid black;
+}
+
+.card-body{
+    border-bottom: solid 1px black;
+}
+
+.border-footer{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}

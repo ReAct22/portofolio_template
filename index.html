@@ -1,17 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./style/bootstrap/"> -->
 </head>
-<body>
 
-<!-- Script Section -->
-<script src="./style/js/jquery-3.7.1.js"></script>
-<script src="./style/bootstrap/js/bootstrap.min.js"></script>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">AndDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Abuot Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5 border-search" type="search" placeholder="Search ..."
+                        aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 p-5 ">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Hallo I'm</h1>
+                    <h2>Andrean Ahmad Fauzi</h2>
+                    <h3>I'will Introduce myself</h3>
+                    <button class="btn btn-custom btn-lg">
+                        <span class="font-color">Follow Me</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 mt-3 ml-4">
+                    <img width="439" height="436" src="./img/Untitled_design__2_-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- main content -->
+        <div class="container">
+            <div class="mt-3">
+                <!-- Start card content -->
+                <h3 class="my-3">Project</h3>
+                <div class="row d-flex align-items-center position-relative mx-5">
+                    <div class="col-12 col-lg-12 col-sm-12 d-flex gap-grid">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./img/img-1.jpg" class="card-img" alt="">
+                                    <h3 class="mt-3 card-title">Hospital</h3>
+                                    <div class="mt-3">
+                                        <button class="btn btn-lg btn-card"><span class="font-card">Show</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./img/img-2.png" class="card-img" alt="">
+                                    <h3 class="mt-3 card-title">Hospital</h3>
+                                    <div class="mt-3">
+                                        <button class="btn btn-lg btn-card"><span class="font-card">Show</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./img/img-3.png" class="card-img" alt="">
+                                    <h3 class="mt-3 card-title">Hospital</h3>
+                                    <div class="mt-3">
+                                        <button class="btn btn-lg btn-card"><span class="font-card">Show</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./img/img-3.png" class="card-img" alt="">
+                                    <h3 class="mt-3 card-title">Hospital</h3>
+                                    <div class="mt-3">
+                                        <button class="btn btn-lg btn-card"><span class="font-card">Show</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Content -->
+            </div>
+        </div>
+
+        <!-- Start About me content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12 d-flex">
+                    <div class="card card-border my-3">
+                        <div class="card-body">
+                            <h3 class="my-3">About Me</h3>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad error incidunt, totam assumenda
+                            ab aspernatur voluptatibus expedita asperiores illum repudiandae, atque corrupti neque?
+                            Inventore, unde! Blanditiis accusantium dignissimos est exercitationem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="border-footer my-3">
+                    <div class="container">
+                        <p>&copy; CopyRight 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Script Section -->
+    <script src="./style/bootstrap/js/bootstrap.js"></script>
+    <script src="./style/js/jquery-3.7.1.js"></script>
 </body>
+
 </html>
