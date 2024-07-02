@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style/bootstrap/"> -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">AndDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5 border-search" type="search" placeholder="Search ..."
+                        aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-3 col-sm-3 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">Profile</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/Foto.png" class="w-50 img-thumbnail rounded mx-auto d-block" alt="">
+                            <hr>
+                            <h4>Nama : </h4>
+                            <p class="opacity-50">Andrena Ahmad Fauzi</p>
+                            <h4>No Telphon : </h4>
+                            <p class="opacity-50">+6281992408196</p>
+                            <h4>Email : </h4>
+                            <p class="opacity-50">andreanahmadf@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-lg-9 col-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">About Me</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="d-inline-flex gap-1">
+                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#profile"
+                                    aria-expanded="false" aria-controls="profile" type="button">Profile</button>
+                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#experience"
+                                    aria-expanded="false" aria-controls="experience" type="button">
+                                    Experience
+                                </button>
+                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#education"
+                                    aria-expanded="false" aria-controls="education" type="button">
+                                    Education
+                                </button>
+                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#skill"
+                                    aria-expanded="false" aria-controls="skill">
+                                    Skill
+                                </button>
+                            </p>
+                            <div class="collapse" id="profile">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Profile</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>With a solid educational background and expertise in IT management and data
+                                            analysis, I am a graduate of
+                                            Diploma 3 in Information Technology I am committed to achieving tangible
+                                            outcomes. Equipped with the
+                                            ability to craft efficient IT strategies and leverage data to optimize
+                                            system performance, I am ready to drive
+                                            business success. My strong communication skills and relentless pursuit of
+                                            learning enable me to deliver
+                                            impactful solutions in harnessing strategic data for organizational growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="experience">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Experience</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-border">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name Company</th>
+                                                        <th>Position</th>
+                                                        <th>Periode</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PT Nirwana Lestari</td>
+                                                        <td>Supervisor / Junior IT Developer</td>
+                                                        <td>2022 - Present</td>
+                                                        <td>
+                                                            <p>Design an automated service for sending data from a
+                                                                database to SAP using Python. Additionally,
+                                                                design an
+                                                                automated service for scraping purchase order data from
+                                                                customers via email to FTP using Python. Lastly,
+                                                                design an attendance application system using the
+                                                                Telegram ChatBOT API with Python, operating in realtime
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PT Four Best Synergy</td>
+                                                        <td>Staff IT / Web Developer</td>
+                                                        <td>2021-2022</td>
+                                                        <td>
+                                                            <p>
+                                                                Design a web page using the PHP programming language
+                                                                with the CodeIgniter Framework. This page
+                                                                should include interactions from master data input to
+                                                                sales invoices, featuring a transaction system allowing
+                                                                users to select customers for cash or credit payments.
+                                                                Additionally, the system should incorporate an
+                                                                inventory system where users can check stock and
+                                                                identify discrepancies between warehouse stock and
+                                                                system records due to sales, returns, and purchase
+                                                                orders accumulation. Furthermore, create report pages
+                                                                comprising sales reports, warehouse reports, purchase
+                                                                order reports, and PPN reports.
+
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apartment Bukit Golf Pondok Indah</td>
+                                                        <td>Freelance</td>
+                                                        <td>3 Month</td>
+                                                        <td>
+                                                            <p>Create a web application management system using the PHP
+                                                                program language that includes tenat records,
+                                                                electricity usage and online complaints if a problem
+                                                                occurs.
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="education">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Education</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name of Institut</th>
+                                                        <th>Year of graduate</th>
+                                                        <th>Faculty</th>
+                                                        <th>Major</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CEP CCIT FTUI</td>
+                                                        <td>2020-2021</td>
+                                                        <td>Information of Technology</td>
+                                                        <th>Web Developer</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SMK AL-Basyariah</td>
+                                                        <td>2016-2019</td>
+                                                        <td>Rekayas Perangkat Lunak (RPL)</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="skill">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Skill</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-lg-3 col-3">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Programming Language</li>
+                                                    <li class="list-group-item">HTML</li>
+                                                    <li class="list-group-item">CSS</li>
+                                                    <li class="list-group-item">Javascript</li>
+                                                    <li class="list-group-item">PHP</li>
+                                                    <li class="list-group-item">Laravel</li>
+                                                    <li class="list-group-item">Python</li>
+                                                    <li class="list-group-item">MySql</li>
+                                                    <li class="list-group-item">PostgreSQL</li>
+                                                    <li class="list-group-item">Microsoft SQL Server</li>
+                                                  </ul>
+                                            </div>
+                                            <div class="col-sm-3 col-lg-3 col-3">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Another Skill</li>
+                                                    <li class="list-group-item">Canva</li>
+                                                    <li class="list-group-item">UI/UX Design</li>
+                                                    <li class="list-group-item">Video Editing</li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="border-footer my-3">
+                    <div class="container">
+                        <p>&copy; CopyRight 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Script Section -->
+    <script src="./style/bootstrap/js/bootstrap.js"></script>
+    <script src="./style/js/jquery-3.7.1.js"></script>
+</body>
+
+</html>

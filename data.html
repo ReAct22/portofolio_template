@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style/bootstrap/"> -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">AndDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5 border-search" type="search" placeholder="Search ..."
+                        aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">My Data</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Name Of Company</th>
+                                    <th>Appication</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody id="demo">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="border-footer my-3">
+                    <div class="container">
+                        <p>&copy; CopyRight 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Script Section -->
+    <script src="./style/bootstrap/js/bootstrap.js"></script>
+    <script src="./style/js/jquery-3.7.1.js"></script>
+    <script>
+        let text = ''
+        var name = localStorage.getItem('name')
+        var company = localStorage.getItem('company')
+        var email = localStorage.getItem('email')
+        var app = localStorage.getItem('app')
+        var desc = localStorage.getItem('description')
+        var data = [{
+            name: name,
+            company: company,
+            email: email,
+            app: app,
+            desc: desc
+        }]
+        for (var k in data) {
+            text += '<tr>' +
+                '<td>' + data[k].name +
+                '</td>' + '<td>' +
+                data[k].company +
+                '</td>' +
+                '<td>' +
+                data[k].app +
+                '</td>' +
+                '<td>' +
+                data[k].desc +
+                '</td>'
+            '</tr>'
+        }
+
+        document.getElementById('demo').innerHTML = text
+        // console.log(data)
+        // document.getElementById('demo').innerHTML = localStorage.getItem('name')
+    </script>
+</body>
+
+</html>

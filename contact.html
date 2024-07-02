@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style/bootstrap/"> -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">AndDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5 border-search" type="search" placeholder="Search ..."
+                        aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Contact Me</h4>
+                </div>
+                <div class="card-body">
+                    <p>If you want a create some application for your business you can send message in this form</p>
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <label for="company">Company</label>
+                    <input type="text" class="form-control" id="company" placeholder="Company">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    <label for="selectYourApplication">Select Your Application</label>
+                    <select name="" id="selectYourApplication" class="form-select">
+                        <option value="">Select Your Application</option>
+                        <option value="Web Application">Web Application</option>
+                        <option value="Desktop Application">Desktop Application</option>
+                        <option value="Mobile Application">Mobile Application</option>
+                    </select>
+                    <label for="description">Description</label>
+                    <textarea name="" id="description" class="form-control"></textarea>
+                    <button class="btn btn-success" onclick="myaction()">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="border-footer my-3">
+                    <div class="container">
+                        <p>&copy; CopyRight 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Script Section -->
+    <script src="./style/bootstrap/js/bootstrap.js"></script>
+    <script src="./style/js/jquery-3.7.1.js"></script>
+    <script>
+        function myaction() {
+            var name = document.getElementById('name').value
+            var company = document.getElementById('company').value
+            var email = document.getElementById('email').value.indexOf('@')
+            var selectapp = document.getElementById('selectYourApplication').value
+            var description = document.getElementById('description').value
+            // console.log(selectapp)
+            if (name != '' || company != '' || email != '' || selectapp != '' || description != ''){
+                if(email != -1){
+                    // Set Item in local storage
+                    localStorage.setItem('name', name)
+                    localStorage.setItem('company', company)
+                    localStorage.setItem('email', email)
+                    localStorage.setItem('app', selectapp)
+                    localStorage.setItem('description', description)
+                    window.alert('Data Berhasil Disimpan!!')
+                } else {
+                    window.alert("Ada kesalahan diemail mohon dicek kembali")
+                }
+            } else {
+                window.alert("Data Tidak boleh ada yang kosong")
+            }
+        }
+    </script>
+</body>
+
+</html>
